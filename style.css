@@ -1,0 +1,151 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(90deg, #1e1e2f, #3e3e55);
+  color: white;
+}
+
+.t {
+  font-size: 50px;
+  color: #8f8fdf;
+}
+
+.b-1,
+.b-2,
+.b-3 {
+  font-size: 24px;
+  padding: 25px;
+  margin: 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: linear-gradient(145deg, #4c4c6d, #2a2a3d);
+  color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.b-1:hover,
+.b-2:hover,
+.b-3:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #5d5d85, #3c3c58);
+}
+
+.icon {
+  font-size: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.reset {
+  font-size: 22px;
+  padding: 12px 25px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #4c4c6d, #2a2a3d);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reset:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #6e6eb7, #3b3b5c);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.res {
+  font-size: 30px;
+  font-weight: bold;
+  color: #e0e0f5;
+  margin-top: 30px;
+  text-shadow: 0 0 4px #5a5a9a, 0 0 8px #3e3e77;
+  animation: pulse 1.2s ease-in-out;
+  letter-spacing: 1px;
+}
+
+.move {
+  font-size: 25px;
+  margin-top: 20px;
+  color: #c8c8f0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px #2c2c5a, 0 0 6px #1e1e3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.score {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ffffffcc;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 2px #2c2c5a;
+}
+
+@media screen and (max-width: 1024px) {
+  .icon {
+    font-size: 32px;
+  }
+
+  .b-1,
+  .b-2,
+  .b-3 {
+    font-size: 12px;
+    padding: 25px;
+  }
+
+  .res {
+    font-size: 24px;
+    text-shadow: 0 0 3px #4a4a7a;
+  }
+
+  .js-move {
+    font-size: 22px;
+    gap: 15px;
+  }
+
+  .score {
+    font-size: 20px;
+    padding: 10px 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    font-size: 28px;
+  }
+
+  .b-1,
+  .b-2,
+  .b-3 {
+    font-size: 12px;
+    padding: 25px;
+  }
+
+  .res {
+    font-size: 20px;
+    text-shadow: none;
+  }
+
+  .move {
+    font-size: 18px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .score {
+    font-size: 18px;
+    padding: 8px 14px;
+    margin-top: 25px;
+    box-shadow: none;
+    text-shadow: none;
+  }
+}
